@@ -10,6 +10,7 @@ Array [
       Choose a font color:
       <br />
       <input
+        name="color"
         onChange={[Function]}
         type="color"
       />
@@ -19,6 +20,7 @@ Array [
       Choose a background color:
       <br />
       <input
+        name="backgroundColor"
         onChange={[Function]}
         type="color"
       />
@@ -35,6 +37,20 @@ Array [
         value="default text"
       />
     </label>
+  </div>,
+  <div
+    style={
+      Object {
+        "backgroundColor": "white",
+        "color": "black",
+        "height": "100px",
+        "width": "100px",
+      }
+    }
+  >
+    <h3>
+      default text
+    </h3>
   </div>,
 ]
 `;

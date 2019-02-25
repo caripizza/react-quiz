@@ -6,8 +6,8 @@ import Shape from './Shape';
 export default class App extends Component {
   state = {
     text: 'default text',
-    color: 'white',
-    backgroundColor: 'black'
+    color: 'black',
+    backgroundColor: 'white'
   };
 
   handleChange = ({ target }) => {

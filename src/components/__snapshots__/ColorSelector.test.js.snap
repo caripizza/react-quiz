@@ -6,6 +6,7 @@ exports[`ColorSelector matches a snapshot 1`] = `
     Choose a font color:
     <br />
     <input
+      name="color"
       onChange={[MockFunction]}
       type="color"
     />
@@ -15,6 +16,7 @@ exports[`ColorSelector matches a snapshot 1`] = `
     Choose a background color:
     <br />
     <input
+      name="backgroundColor"
       onChange={[MockFunction]}
       type="color"
     />
