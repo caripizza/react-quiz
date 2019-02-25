@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ColorSelector from './ColorSelector';
 
 export default class App extends Component {
   state = {
@@ -10,10 +11,11 @@ export default class App extends Component {
   };
 
   render() {
-    const { text } = this.state;
+    // const { text } = this.state;
     return (
       < >
-        <h1>App</h1>
+        <h1>React Quiz</h1>
+        <ColorSelector onChange={this.handleChange}/>
       </>
     );
   }
