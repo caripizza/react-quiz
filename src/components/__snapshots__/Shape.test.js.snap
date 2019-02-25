@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shape matches a snapshot 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "blue",
+      "color": "red",
+      "height": "100px",
+      "width": "100px",
+    }
+  }
+>
+  <h3>
+    hi
+  </h3>
+</div>
+`;
