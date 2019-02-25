@@ -12,12 +12,12 @@ const ColorSelector = ({ onChange }) => {
     <div>
       <label>
         Choose a font color:<br/>
-        <input type="color" onChange={onChange}/>
+        <input type="color" name="color" onChange={onChange}/>
       </label>
       <br/>
       <label>
         Choose a background color:<br/>
-        <input type="color" onChange={onChange}/>
+        <input type="color" name="backgroundColor" onChange={onChange}/>
       </label>
     </div>
   );

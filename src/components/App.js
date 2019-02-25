@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import ColorSelector from './ColorSelector';
 import TextSelector from './TextSelector';
+import Shape from './Shape';
 
 export default class App extends Component {
   state = {
-    text: 'default text'
+    text: 'default text',
+    color: 'white',
+    backgroundColor: 'black'
   };
 
   handleChange = ({ target }) => {
@@ -18,6 +21,7 @@ export default class App extends Component {
         <h1>React Quiz</h1>
         <ColorSelector onChange={this.handleChange}/>
         <TextSelector text={text} onChange={this.handleChange}/>
+        <Shape  {...this.state}/>
       </>
     );
   }
