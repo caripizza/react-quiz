@@ -1,7 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App matches a snapshot 1`] = `
-<h1>
-  App
-</h1>
+Array [
+  <h1>
+    React Quiz
+  </h1>,
+  <div>
+    <label>
+      Choose a font color:
+      <br />
+      <input
+        onChange={[Function]}
+        type="color"
+      />
+    </label>
+    <br />
+    <label>
+      Choose a background color:
+      <br />
+      <input
+        onChange={[Function]}
+        type="color"
+      />
+    </label>
+  </div>,
+  <div>
+    <label>
+      Enter text:
+      <br />
+      <input
+        name="text"
+        onChange={[Function]}
+        type="text"
+        value="default text"
+      />
+    </label>
+  </div>,
+]
 `;

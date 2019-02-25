@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextSelector matches a snapshot 1`] = `
+<div>
+  <label>
+    Enter text:
+    <br />
+    <input
+      name="text"
+      onChange={[MockFunction]}
+      type="text"
+      value="hallooo"
+    />
+  </label>
+</div>
+`;

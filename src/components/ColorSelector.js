@@ -9,7 +9,7 @@ Color input to change background color
 
 const ColorSelector = ({ onChange }) => {
   return (
-    < >
+    <div>
       <label>
         Choose a font color:<br/>
         <input type="color" onChange={onChange}/>
@@ -19,7 +19,7 @@ const ColorSelector = ({ onChange }) => {
         Choose a background color:<br/>
         <input type="color" onChange={onChange}/>
       </label>
-    </>
+    </div>
   );
 };
 
