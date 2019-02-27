@@ -13,6 +13,7 @@ Array [
         name="color"
         onChange={[Function]}
         type="color"
+        value="#ffffff"
       />
     </label>
     <br />
@@ -23,6 +24,7 @@ Array [
         name="backgroundColor"
         onChange={[Function]}
         type="color"
+        value="#000000"
       />
     </label>
   </div>,
@@ -41,8 +43,8 @@ Array [
   <div
     style={
       Object {
-        "backgroundColor": "white",
-        "color": "black",
+        "backgroundColor": "#000000",
+        "color": "#ffffff",
         "height": "100px",
         "width": "100px",
       }
@@ -52,5 +54,61 @@ Array [
       default text
     </h3>
   </div>,
+  <form
+    onSubmit={[Function]}
+  >
+    <label>
+      Name
+      <br />
+      <input
+        name="name"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+    </label>
+    <br />
+    <label>
+      Age
+      <br />
+      <input
+        name="age"
+        onChange={[Function]}
+        type="number"
+        value=""
+      />
+    </label>
+    <br />
+    <label>
+      Weight
+      <br />
+      <input
+        name="weight"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+    </label>
+    <br />
+    <button>
+      Add
+    </button>
+  </form>,
+  <ul>
+    <li>
+      <h2>
+        Name: 
+        b
+      </h2>
+      <h3>
+        Age: 
+        4
+      </h3>
+      <h3>
+        Weight: 
+        3 lbs
+      </h3>
+    </li>
+  </ul>,
 ]
 `;

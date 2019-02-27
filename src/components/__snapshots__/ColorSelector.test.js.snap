@@ -9,6 +9,7 @@ exports[`ColorSelector matches a snapshot 1`] = `
       name="color"
       onChange={[MockFunction]}
       type="color"
+      value="#ffffff"
     />
   </label>
   <br />
@@ -19,6 +20,7 @@ exports[`ColorSelector matches a snapshot 1`] = `
       name="backgroundColor"
       onChange={[MockFunction]}
       type="color"
+      value="#000000"
     />
   </label>
 </div>

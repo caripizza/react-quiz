@@ -7,9 +7,21 @@
     "lint": "eslint .",
     "pretest": "npm run lint",
     "test": "jest --verbose --runInBand --detectOpenHandles --passWithNoTests",
-    "test:watch": "jest --watch --verbose --runInBand --detectOpenHandles --updateSnapshot",
+    "test:watch": "npm run test -- --watch --updateSnapshot",
     "start": "webpack-dev-server --hot --mode development --devtool eval-source-map",
     "build": "webpack -p"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css)$": "identity-obj-proxy",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js"
+    },
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>src/setupTests.js"
+    ]
   },
   "keywords": [],
   "author": "",
@@ -33,6 +45,9 @@
     "babel-polyfill": "^6.26.0",
     "clean-webpack-plugin": "^1.0.1",
     "css-loader": "^2.1.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.10.0",
+    "enzyme-to-json": "^3.3.5",
     "eslint": "^5.14.0",
     "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-react": "^7.12.4",
